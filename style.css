@@ -1,0 +1,295 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f1ea;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #5a3e2b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Menu */
+nav {
+  background: #8b6b4f;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+/* Seções */
+section {
+  margin-bottom: 20px;
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+/* Imagens */
+img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Lista */
+ul {
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background: #5a3e2b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+/* ===== TRANSIÇÕES ===== */
+
+/* Menu */
+nav a {
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+  background: #5a3e2b;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Imagens */
+img {
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Seções */
+section {
+  transition: 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Main (leve suavização geral) */
+main {
+  transition: 0.3s;
+}
+
+/* ===== RESPONSIVIDADE (CELULAR E TABLET) ===== */
+
+/* Imagens responsivas */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Conteúdo centralizado */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* Menu adaptável */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Texto padrão */
+body {
+  font-size: 16px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+}
+
+/* ===== FOOTER LISTA ===== */
+
+footer {
+  background: #5a3e2b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Títulos do footer */
+footer p {
+  margin: 5px 0;
+}
+
+/* Lista de alunos */
+footer ul {
+  list-style: none; /* tira as bolinhas */
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Cada nome */
+footer ul li {
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+footer ul li:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+/* ===== AJUSTE PARA NOTEBOOK / TELAS MAIORES ===== */
+
+body {
+  background: #f4f1ea;
+}
+
+/* Centraliza tudo */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header mais bonito */
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Menu organizado */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Links estilo botão */
+nav a {
+  padding: 8px 12px;
+  background: #8b6b4f;
+  border-radius: 5px;
+}
+
+/* Espaço entre seções */
+section {
+  margin-bottom: 25px;
+}
+
+/* ===== IMAGENS INTERNAS ===== */
+
+.imagem {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+/* ===== LINK LOCALIZAÇÃO RESPONSIVO ===== */
+
+.localizacao {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.localizacao a {
+  display: inline-block;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #5a3e2b;
+  background: #f4f1ea;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+/* Hover */
+.localizacao a:hover {
+  color: white;
+  background: #8b6b4f;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+  .localizacao a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+/* ===== TÍTULOS RESPONSIVOS ===== */
+
+h1 {
+  font-family: Georgia, serif;
+  text-align: center;
+  color: #d5beae;
+  font-size: clamp(26px, 4vw, 36px);
+  margin-bottom: 15px;
+}
+
+/* ===== TEXTO JUSTIFICADO ===== */
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
