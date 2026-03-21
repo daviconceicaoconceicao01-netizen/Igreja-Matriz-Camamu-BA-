@@ -293,3 +293,17 @@ p {
   text-align: justify;
   line-height: 1.6;
 }
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #8b6b4f, transparent);
+  margin: 25px 0;
+}
