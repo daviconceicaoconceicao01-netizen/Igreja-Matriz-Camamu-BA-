@@ -307,3 +307,26 @@ hr {
   background: linear-gradient(to right, transparent, #8b6b4f, transparent);
   margin: 25px 0;
 }
+
+.observacao {
+  background: #fff3cd;
+  border-left: 6px solid #ffc107;
+  padding: 15px;
+  margin: 25px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.observacao h2 {
+  color: #856404;
+  margin-bottom: 8px;
+}
+
+.observacao p {
+  color: #5a4b00;
+  font-style: italic;
+}
+
+.titulo-centro {
+  text-align: center;
+}
