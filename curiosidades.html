@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <script src="script.js"></script>
     <link rel="shortcut icon" href="imagens/interior.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -11,10 +12,14 @@
 
 <body>
     <header>
-        <h1>Curiosidades Sobre a Igreja Matriz</h1>
+        <h1>Curiosidades </h1>
     </header>
 
-    <nav>
+    <nav class="menu">
+        <div class="hamburguer" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="links" id="links">
         <a href="index.html">Inicio</a>
         <a href="Indentificacao.html">Localização</a>
         <a href="origem.html">Origem</a>
@@ -22,6 +27,7 @@
         <a href="materialidade.html">Material</a>
         <a href="estadeconser.html">Estado de Conservação</a>
         <a href="links.html">Referências</a>
+    </div>
 
     </nav>
 

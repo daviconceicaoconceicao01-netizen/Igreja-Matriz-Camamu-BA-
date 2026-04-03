@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <script src="script.js"></script>
     <link rel="shortcut icon" href="imagens/interior.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -17,14 +18,20 @@
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="origem.html">Origem</a>
-        <a href="funcao.html">Função</a>
-        <a href="materialidade.html">Material</a>
-        <a href="estadeconser.html">Estado de Conservação</a>
-        <a href="curiosidades.html">Curiosidades</a>
-        <a href="links.html">Referências</a>
-
+        <div class="menu-topo">
+            <div class="hamburguer" onclick="toggleMenu()">
+                ☰
+            </div>
+        </div>
+        <div class="links" id="links">
+            <a href="index.html">Inicio</a>
+            <a href="origem.html">Origem</a>
+            <a href="funcao.html">Função</a>
+            <a href="materialidade.html">Material</a>
+            <a href="estadeconser.html">Estado de Conservação</a>
+            <a href="curiosidades.html">Curiosidades</a>
+            <a href="links.html">Referências</a>
+        </div>
     </nav>
 
     <main>

@@ -330,3 +330,91 @@ hr {
 .titulo-centro {
   text-align: center;
 }
+
+
+/* ===== MENU ===== */
+
+.menu {
+  background: #8b6b4f;
+  padding: 10px;
+}
+
+.menu-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 18px;
+}
+
+/* Botão hamburguer */
+.hamburguer {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Links */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 700px) {
+
+  .hamburguer {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links.ativo {
+    display: flex;
+  }
+
+  .links a {
+    padding: 10px;
+    border-top: 1px solid #fff;
+  }
+
+}
+
+.hamburguer {
+  position: fixed;     /* fixa na tela */
+  top: 15px;           /* distância do topo */
+  left: 15px;          /* canto esquerdo */
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;       /* fica acima de tudo */
+  background: #8b6b4f;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+header {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+main {
+  margin-top: 0;
+}
